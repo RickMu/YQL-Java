@@ -1,7 +1,11 @@
-# YQL-Java
+# YQL-Finance-Java
 <br/>
-Utilizes OkHttp3
+Utilizes OkHttp3 and org.json
 <br/>
-Very Basic YQL queries with Java,  more are coming soon.
+Able to make YQL queries and parse its response:
 <br/>
-Will eventually be used as a bases for an android app
+Select * from yahoo.finance.quote WHERE symbol in (.....);
+<br/>
+Select * from yahoo.finance.historicaldata WHERE symbol in (.....) AND startDate ="YYYY-MM-DD" And endDate ="YYYY-MM-DD";
+<br/>
+The parsed response can be stored easily in defined data structures in Data package.
