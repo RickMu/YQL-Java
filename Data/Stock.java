@@ -23,6 +23,12 @@ public class Stock {
         return currentQuote;
     }
 
+    public HistoricalQuote getHistoricalQuote(){
+        HistoricalQuote h = new HistoricalQuote();
+        historicalQuotes.add(h);
+        return h;
+    }
+
 
     public void setCurrentQuote(CurrentQuote currentQuote) {
         this.currentQuote = currentQuote;
